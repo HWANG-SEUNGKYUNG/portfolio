@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEUNGKYUNG</title>   
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/prefixfree.jquery.js"></script>  
+    <script src="js/wow.js"></script> 
+</head>
+<body>
+    <main id="fullpage">
+        <section class="section" id="s1">
+            <div class="intro">
+                <div>
+                    <div class="star star-1"></div>
+                    <div class="star star-2"></div>
+                    <div class="star star-3"></div>
+                    <div class="star star-4"></div>
+                    <div class="star star-5"></div>
+                    <div class="star star-6"></div>
+                </div>
+
+                
+                <h1 cless="animate__animated fadeInRight200">Welcome to MY space</h1>
+
+                <div class="contentBox">
+                    <div class="about">
+                        <div class="section2 mediaS">
+                            <a href="#s2" class="A tAimg animate__animated animate__rotateInUpRight wow">
+                                <img src="img/moon1.png" alt="">
+                            </a>
+                            <h2>ABOUT ME</h2>
+                        </div>
+                    </div>
+                    <div class="web">
+                        <div class="section3 mediaS">
+                            <a href="#s3" class="A tWimg animate__animated animate__rotateInUpRight delay300 wow">
+                                <img src="img/moon2.png" alt="">
+                            </a>
+                            <h2>PORTFOLIO</h2><p>(web)</p>
+                        </div>
+                    </div>
+                    <div class="design">
+                        <div class="section4 mediaS">
+                            <a href="#s4" class="A tDimg animate__animated animate__rotateInUpRight delay500 wow">
+                                <img src="img/moon3.png" alt="">
+                            </a>
+                            <h2>PORTFOLIO</h2><p>(design)</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="section5 mediaS">
+                            <a href="#s5" class="A tCimg animate__animated animate__rotateInUpRight delay800 wow">
+                                <img src="img/moon4.png" alt="">
+                            </a>
+                            <h2>CONTACT ME</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myCanvasContainer">
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </section>
+
+
+        <section class="section" id="s2">
+            <div>
+                <h2 class="sectionintro">ABOUT <span>ME</span></h2>
+                <p class="sectionintroP">신입 웹디자이너 & 웹퍼블리셔 황승경입니다</p>
+                
+                <div class="profileBox">
+                    <div class="profileImg"><img src="img/my.jpg" alt=""></div>
+                    <div class="profileTxtBox">
+                        <div class="profile">
+                            <h3>PROFILE</h3>
+                            <div class="profileTxt">
+                                <div class="leftTxt animate__animated animate__bounceInRight wow">
+                                    <p>NAME</p>
+                                    <p>AGES</p>
+                                    <p>ADDRESS</p>
+                                    <p>EMAIL</p>
+                                </div>
+
+                                <div class="rightTxt animate__animated animate__fadeInRight delay500 wow">
+                                    <p>황승경</p>
+                                    <p>30(1993.09.04)</p>
+                                    <p>서울특별시 금천구</p>
+                                    <p>ghkdtmdrud@kakao.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='wrap'>
+                            <h3>MY ABILITIES</h3>
+                            <div class='container'>
+                                <div class="Dchart">
+                                    <p>HTML</p>
+                                    <div class="chart doughnut1"><span class="center">90%</span></div>
+                                </div>
+                                <div class="Dchart">
+                                    <p>CSS</p>
+                                    <div class="chart doughnut2"><span class="center">85%</span></div>
+                                </div>
+                                <div class="Dchart">
+                                    <p>JS</p>
+                                    <div class="chart doughnut3"><span class="center">75%</span></div>
+                                </div>
+                                <div class="Dchart">
+                                    <p>Ps</p>
+                                    <div class="chart doughnut4"><span class="center">95%</span></div>
+                                </div>
+                                <div class="Dchart">
+                                    <p>Ai</p>
+                                    <div class="chart doughnut5"><span class="center">90%</span></div>
+                                </div>
+                                <div class="Dchart">
+                                    <p>Xd</p>
+                                    <div class="chart doughnut6"><span class="center">80%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="s3">
+            <div>
+                <h2 class="sectionintro">PORTFOLIO <span> (web)</span></h2>
+
+                <!-- swiper1 -->
+                <div class="webtable swiper1 mySwiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="webportfolio swiper-slide">
+                            <div class="ImgTable animate__animated animate__fadeInUp wow">
+                                <div class="pc"><img src="img/pc1.png" alt=""></div>
+                                <div class="phone"><img src="img/phone3.png" alt=""></div>
+                            </div>
+                            <h3>광주세계김치축제 <span> 웹사이트 리뉴얼</span></h3>
+                            <p>HTML, CSS, JS를 이용하여 리뉴얼한 웹페이지입니다.</p>
+                            <div class="webAbox">
+                                <ul class="webA">
+                                    <li class="read-more"><a href=""><span></span>상세페이지</a></li>
+                                    <li class="read-more"><a href=""><span></span>WEB바로가기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="webportfolio swiper-slide">
+                            <div class="ImgTable animate__animated animate__fadeInUp delay500 wow">
+                                <div class="pc miniwebafter"><img src="img/pc1.png" alt=""></div>
+                                <div class="tablet"><img src="img/tablet2.png" alt=""></div>
+                                <div class="phone"><img src="img/phone3.png" alt=""></div>
+                            </div>
+                            <h3>미니 컨트리맨 <span> 반응형 웹사이트 제작</span></h3>
+                            <p>HTML, CSS, JS를 이용하여 제작한 랜딩페이지입니다.</p>
+                            <div class="webAbox">
+                                <ul class="webA">
+                                    <li class="read-more"><a href=""><span></span>WEB바로가기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="webportfolio swiper-slide">
+                            <div class="ImgTable animate__animated animate__fadeInUp delay800 wow">
+                                <div class="pc"><img src="img/pc1.png" alt=""></div>
+                                <div class="phone"><img src="img/phone3.png" alt=""></div>
+                            </div>
+                            <h3>호텔 라고 디 가르다<span> 웹사이트 제작</span></h3>
+                            <p>HTML, CSS, JS를 이용하여 카피한 웹페이지입니다.</p>
+                            <div class="webAbox">
+                                <ul class="webA">
+                                    <li class="read-more"><a href=""><span></span>WEB바로가기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="webportfolio swiper-slide">
+                            <div class="ImgTable animate__animated animate__fadeInUp delay300 wow">
+                                <div class="pc"><img src="img/pc1.png" alt=""></div>
+                                <div class="phone"><img src="img/phone3.png" alt=""></div>
+                            </div>
+                            <h3>부트스트랩 <span> 웹사이트 카피</span></h3>
+                            <p>HTML, CSS, Bootstrap을 이용하여 카피한 랜딩 페이지입니다.</p>
+                            <div class="webAbox">
+                                <ul class="webA">
+                                    <li class="read-more"><a href=""><span></span>WEB바로가기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- swiper1 end -->
+            </div>
+            
+        </section>
+
+
+        <section class="section" id="s4">
+            <div>
+                <h2 class="sectionintro">PORTFOLIO <span> (design)</span></h2>
+                
+                <div class="designImg swiper2 mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="article animate__animated animate__fadeInUp swiper-slide">
+                            <img src="img/card1.png" alt="">
+                            <h2>명함, 로고 디자인</h2>
+                            <p>Ps, Ai를 사용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div class="article animate__animated animate__fadeInUp delay300 swiper-slide">
+                            <img src="img/kker.png" alt="">
+                            <h2>UI/UX 디자인</h2>
+                            <p>Ps, Ai, Xd를 사용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div  class="article animate__animated animate__fadeInUp delay500 swiper-slide">
+                            <img src="img/cuckoo.png" alt="">
+                            <h2>포스터, 광고, 디자인</h2>
+                            <p>Ps를 이용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div class="article animate__animated animate__fadeInUp delay800 swiper-slide">
+                            <img src="img/sdsd.png" alt="">
+                            <h2>포스터, 광고, 제품 디자인</h2>
+                            <p>Ps을 이용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div class="article animate__animated animate__fadeInUp delay300 swiper-slide">
+                            <img src="img/mbest.png" alt="">
+                            <h2>포스터, 광고, 배너 디자인</h2>
+                            <p>Ps, Ai를 이용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div class="article animate__animated animate__fadeInUp delay500 swiper-slide">
+                            <img src="img/card2.png" alt="">
+                            <h2>명함, 로고 디자인</h2>
+                            <p>Ps, Ai를 이용하여 제작하였습니다.</p>
+                        </div>
+
+                        <div class="article animate__animated animate__fadeInUp swiper-slide">
+                            <img src="img/card1.png" alt="">
+                            <h2>제목이 들어갈 곳</h2>
+                            <p>내용들을 적어 주는 부분입니다.</p>
+                        </div>
+
+                        <div  class="article animate__animated animate__fadeInUp delay300 swiper-slide">
+                            <img src="img/graphic1.jpg" alt="">
+                            <h2>포스터, 그래픽 디자인</h2>
+                            <p>Ps를 이용하여 제작하였습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                        
+                    <div class="popup">
+                        <div>
+                            <img src="img/kker.png" alt="">
+                            <h2>제목이 들어갈 곳</h2>
+                            <p>내용들을 적어 주는 부분입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section" id="s5">
+            <div class="contactMe">
+                <h2 class="sectionintro">CONTACT <span class="lastMe"> ME</span></h2>
+                <div>
+                    <div class="mykakao">
+                        <img src="img/my_kakao.png" alt="">
+                    </div>
+                    <h3>카카오톡 오픈채팅방<h3>
+                    <p>연락주시면 감사하겠습니다.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <p>Copyright 2022. SEUNGKYUNG all rights reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="topbtn">
+            <span></span>
+            <p>TOP</p>
+        </div>
+  
+    </main>
+    
+    <script src="js/fullpage.js"></script>
+    <script src="js/klouds.min.js"></script>  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SEBANG_Gothic_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+ul::after {display: block; content: ''; clear: both;}
+li { list-style:none; }
+a { text-decoration:none; color:#111; }
+img { max-width:100%; }
+
+.mobile { display:none; }
+.pc { display:block; }
+
+body { font-family: 'NEXON Lv2 Gothic','SEBANG_Gothic_Regular', Arial, Helvetica, sans-serif; }
+
+section { background-size:cover; background-position:center center; height: 100vh; overflow: hidden; }
+
+
+/********  fullpage   *********/
+
+/* section1 start */
+#s1 {position: relative;}
+
+.intro h1 { 
+    font-family: 'SEBANG_Gothic_Regular';
+    text-align: center;
+    font-size: 3em; color: white;
+    padding-top: 5vh;
+}
+
+.contentBox { display: inline-block; width: 100%;  position: absolute; z-index: 2; top: 0;}
+
+.contentBox>div {width: 25%; height: auto; float: left;
+    overflow: hidden;}
+
+.contentBox h2 {color: white; margin-bottom: 5px; }
+.contentBox p {font-family: 'SEBANG_Gothic_Regular'; color: #fff;}
+
+.about {margin-top: 29vh;}
+.web {margin-top: 13vh;}
+.design {margin-top: 21vh;}
+.contact {margin-top: 5vh;}
+.section5, .section2, .section3, .section4 { 
+    top: 15px;
+    padding: 13%;
+    text-align: center;}
+.A { width: 100%; height: auto; 
+    display: block; 
+    color: white;
+    border-radius: 50%; 
+    margin-bottom: 2vh;
+}
+/*top anmation*/
+.star {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    -webkit-animation: shooting 5s linear infinite;
+            animation: shooting 5s linear infinite;
+}
+.star:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    right: 1px;
+    top: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+  
+.star-2 {
+    top: 15vh;
+    -webkit-animation: shooting 8s 1s linear infinite;
+            animation: shooting 8s 1s linear infinite;
+}
+  
+.star-3 {
+    top: 30vh;
+    -webkit-animation: shooting 4s 2s linear infinite;
+            animation: shooting 4s 2s linear infinite;
+}
+.star-4 {
+    top: 50vh;
+    -webkit-animation: shooting 6s linear infinite;
+            animation: shooting 6s linear infinite;
+}
+.star-5 {
+    top: 60vh;
+    -webkit-animation: shooting 9s 1s linear infinite;
+            animation: shooting 9s 1s linear infinite;
+    z-index: 1;
+}
+.star-6 {
+    top: 70vh;
+    -webkit-animation: shooting 3s 2s linear infinite;
+            animation: shooting 3s 2s linear infinite;
+    z-index: 1;
+}
+  
+@-webkit-keyframes daylight {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes daylight {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+}
+}
+@-webkit-keyframes shooting {
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc(100% + 100px);
+    }
+}
+@keyframes shooting {
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc(100% + 100px);
+    }
+}
+
+/*top anmation end*/
+
+#myCanvasContainer {
+    width:100%;
+    height: 45vh;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+/* section1 end */
+
+
+/* section2 start */
+.sectionintro {
+    font-family: 'SEBANG_Gothic_Regular';
+    margin-top: 80px;
+    text-align: center;
+    font-size: 1.6vw;
+}
+.sectionintro span {font-weight: lighter; color: #767676;}
+.sectionintroP {text-align: center; margin: 10px 0 5vh; }
+
+.profileBox {display: flex; justify-content: center; height: 60vh;}
+.profileBox h3 {font-family: 'SEBANG_Gothic_Regular'; margin-bottom: 5px;}
+.profileImg {width: 270px; margin: auto 15px;}
+.profileImg img {width: 100%; object-fit:cover; }
+
+.profileTxtBox {margin: auto 0; padding: 10px 50px;}
+.profileTxt { display: flex;}
+.leftTxt p {font-family: 'SEBANG_Gothic_Regular'; line-height: 35px; padding: 0 15px;}
+.rightTxt p { line-height: 35px; padding: 0 15px; color: #767676;}
+
+
+/****chart doughnut1******/
+.wrap {
+    position: relative; margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px;
+}
+.Dchart {margin-top: 10px; text-align: center;}
+.Dchart p {font-family: 'SEBANG_Gothic_Regular'; margin-bottom: 10px;}
+
+.chart {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.7s;
+}
+
+span.center {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 13px;
+    transform: translate(-50%, -50%);
+}
+/* section2 end */
+
+
+/* section3 start */
+.webtable>div {padding: 5px 0;}
+.webportfolio {width: auto;}
+
+.webtable {margin-top: 5vh; text-align: center;}
+
+.ImgTable {position: relative; width: 850px; margin: 0 auto}
+
+.webtable .pc {width: 700px; margin: 0 auto;}
+.webtable .pc img {width: 100%;}
+.webtable .phone {
+    width: 200px; 
+    position: absolute; 
+    top: 70%; left: 70%;
+}
+.webtable .phone img {width: 100%;}
+.webtable .tablet { 
+    width: 330px;  
+    position: absolute; 
+    top: 55%; left: 0;
+}
+.webtable .tablet img {width: 100%;}
+
+.webtable h3 { margin-top: 3vh;}
+.webtable p { line-height: 35px; margin-bottom: 20px;}
+.webtable span { color: #767676; font-weight: normal;}
+
+.webA { display: flex; gap: 10px; justify-content: center; margin-bottom: 3vh;}
+
+
+/*slick option*/
+.swiper-pagination { position: unset;}
+
+.swiper-pagination-bullet{
+    width: 15px; height: 15px;
+    background-color: #652EC700;
+    border: 1px solid #662ec760;
+}
+
+.swiper-pagination-bullet-active {
+    background: #662ec775;
+}
+
+
+
+
+
+/*action-button*/
+.read-more > a {
+    border: 1px solid #652EC7;
+    color: #652EC7;
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s linear;
+    font-size: 0.8vw;
+}
+.read-more > a > span {
+    background-color: #652EC7;
+    border-radius: 50%;
+    color: #ffffff;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: height 1s, width 1s;
+    width: 0;
+    z-index: -1;
+}
+.read-more > a:hover {
+    color: #ffffff;
+}
+.read-more > a:hover > span {
+    height: 700px;
+    width: 700px;
+}
+
+.miniwebafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 45.5px;
+    width: 591px;
+    height: 333px;
+    background: url(../img/miniwebimg.png) 45% top no-repeat;
+    background-size:cover;
+}
+.pc:hover::after{
+    transition: 10s;
+    background-position: 0 bottom;
+}
+/* section3 end */
+
+/* section4 start */
+.designImg { text-align: center; margin: 30px;}
+
+.designImg::after { display: block; content: ''; clear: both;}
+
+
+.article {
+    width: 25%;
+    height: 20vw;
+    float: left;
+    padding: 10px;   
+    cursor: pointer;
+}
+
+.article img {
+    width: 100%; 
+    border-radius: 10%; 
+    box-shadow: 5px 5px 10px #0000007a;
+    object-fit: cover;
+    object-position: left center;
+    height: 100%;
+    border: 5px solid #fff;
+}
+
+.article h2 { display: none; font-family: 'SEBANG_Gothic_Regular';}
+.article p { display: none;}
+
+.popup { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8);  transition:0.4s; z-index: 5;}
+.popup.on { display:block; }
+
+.popup > div { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); padding:30px; background: #000; }
+.popup img {  }
+.popup h2 { color:#fff; font:bold 20px 'Orbitron'; margin:10px 0 5px 0; }
+.popup p{ color:#d3d3d3; font-size:12px; }
+
+/* section5 start */
+
+#s5 .lastMe { color: #fff;}
+#s5 .sectionintro {margin-bottom: 10vh;}
+
+.contactMe { text-align: center;}
+.contactMe>div { height: 50vh;}
+.mykakao { width: 250px; margin: 50px auto 30px;}
+.mykakao img {width: 100%;}
+
+.contactMe h3 { margin-bottom: 10px; font-family: 'SEBANG_Gothic_Regular'; color: #fff;}
+.contactMe p { font-size: 14px; font-family: 'NEXON Lv2 Gothic'; font-weight: normal; color: #fff;}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #33135C;
+    width: 100%;
+    position: absolute; bottom: 0;
+}
+.footer p {color: #fff; font-size: 10px; line-height: 30px; }
+
+
+.topbtn { 
+    position: relative;
+    bottom: 10px; right: 10px; position: fixed; cursor: pointer;
+    border: 1px solid white; border-radius: 50%;
+    width: 45px; height: 45px;;
+    transition: 0.3s;
+}
+.topbtn>span { 
+    width:10px; height:10px; border:1px solid #fff; border-left:0; border-bottom:0; transform: rotate(-45deg);  
+    display: block;
+    position: absolute;
+    bottom: 23px; left: 17px;
+    transition: 0.3s;
+}
+.topbtn>p { 
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 8px;
+    position: absolute; bottom: 10px; left: 12px; 
+    transition: 0.3s;
+}
+
+.topbtn:hover span { border:1px solid #ffd300; border-left:0; border-bottom:0; }
+.topbtn:hover p  {color: #ffd300;}
+.topbtn:hover {border: 1px solid #ffd300;}
+
+
+
+.swiper2 .swiper-wrapper { display: block;}
+
+
+

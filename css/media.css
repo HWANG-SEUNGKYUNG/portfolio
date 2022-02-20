@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@media ( max-width:1024px) {
+    .about {margin-top: 40vh;}
+    .web {margin-top: 25vh;}
+    .design {margin-top: 35vh;}
+    .contact {margin-top: 20vh;}
+
+    .sectionintroP {font-size: 14px; margin-bottom: 30px;}
+
+    .profileBox h3 {font-size: 16px;}
+}
+@media ( max-width:800px) {
+    .sectionintro { font-size: 16px;}
+    .sectionintroP {font-size: 14px;}
+
+    .contentBox h2 {font-size: 18px;}
+
+    .profileBox h3 {font-size: 14px;}
+    
+    .leftTxt p { font-size: 13px; line-height: 30px;}
+    .rightTxt p {font-size: 13px; line-height: 30px;}
+    .Dchart p {font-size: 13px;}
+
+
+    .profileBox {flex-direction: column; height: 70vh; }
+    .profileImg {width: 170px; margin: 25px auto;}
+    .profileTxtBox {margin: 0 auto; padding: 0 30px;}
+
+    .webtable h3 { font-size: 16px;}
+    .webtable p { font-size: 14px;}
+    .read-more > a { font-size: 12px;}
+    .webtable { margin-top: 30px;}
+
+
+    #s4 .sectionintro, #s3 .sectionintro { margin-top: 30px;}
+
+    .contactMe h3 { font-size: 16px;}
+}
+
+@media ( max-width:540px) {
+
+
+    .profileTxtBox { padding: 10px 30px;}
+
+    #s3 .sectionintro { margin-top: 80px;}
+    .webtable {margin-top: 5vh;}
+    .webtable .pc { width: 450px;}
+    .webtable .phone { width: 150px; left: 60%; top:65%}
+    .webtable .tablet { width: 210px; left: 20%;}
+    .container {
+        gap: 5px;
+        margin: 0 10px;
+    }
+    .sectionintroP { margin-bottom: 5px;}
+    .profileTxtBox {padding: 10px 0;}
+    .profileImg {margin: 0 auto;}
+    .chart {
+        width: 50px;
+        height: 50px;
+        transition: 0.5s;
+    }
+    span.center {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 10px;
+    }
+    .miniwebafter::after {
+        width: 380px;
+        height: 215px;
+        top: 29px;
+    }
+
+    .designImg { margin: 30px 10px;}
+
+    .article { width: 100%; height: 55vh;}
+
+    .swiper2 .swiper-wrapper { display: flex;}
+
+
+}
+
+@media ( max-width:480px) {
+    .contentBox {left: 10%; top: 25%;}
+    .contentBox>div {float: none;
+        overflow: hidden; width: 350px; 
+        text-align: center;
+    }
+    .contentBox h2 {padding: 45px 5px; margin: 0;}
+    .contentBox p {padding: 45px 0px; }
+
+    .sectionintroP {margin-bottom: 20px;}
+
+    .mediaS { display: inline-flex; justify-content: center;}
+    .mediaS> a { width: 100px;}
+    .about, .web, .design, .contact { margin-top: 0; width: 300px;}
+    .section5, .section2, .section3, .section4 { padding: 0;}
+    .profileImg {width: 130px;}
+}
+
+@media ( max-width: 375px) {
+    .intro h1 { font-size: 28px; margin-top: 20px;}
+    .contentBox {top: 20%;}
+    .sectionintro, #s3 .sectionintro { margin-top: 30px;}
+    .webtable { margin-top: 30px;}
+    #s5 .sectionintro {margin-bottom: 30px; margin-top: 80px;}
+    .mykakao { margin-top: 50px;}
+    .wrap { margin-top: 10px;}
+
+    .webtable .pc { width: 360px;}
+    .webtable .phone { width: 120px; left: 58%; top:65%}
+    .webtable .tablet { width: 175px; left: 25%;}
+
+    .miniwebafter::after {
+        width: 304px;
+        height: 171px;
+        top: 23px;
+    }
+
+}
