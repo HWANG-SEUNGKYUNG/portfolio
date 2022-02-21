@@ -192,7 +192,10 @@ var swiper = new Swiper(".swiper1", {
     observeParents: true,
     pagination: {
         el: ".swiper-pagination",
-        clickable: true
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        }
     }
 });
 
@@ -205,7 +208,7 @@ var Mswiper = function(){
                 pagination: {
                     el: ".swiper-pagination",
                     type: "fraction",
-                  },
+               },
         });
         } else if (winW > 540) {
             
