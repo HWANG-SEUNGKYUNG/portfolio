@@ -177,6 +177,12 @@ pop.addEventListener('click', e => {
 });
 
 
+//gwkf mobile 창
+$(".gwkfmobileA > a").click(function(){
+    window.open("https://hwang-seungkyung.github.io/GWKF-m/", "광주세계김치축제_m", "width=375 , height=800");
+});
+
+
 
 
 // swiper
