@@ -6,7 +6,7 @@ var myFullpage = new fullpage('#fullpage', {
     responsiveHeight:350,  //세로 높이가 350px보다 작아졌을때는 오토스크롤링 작동X
     scrollBar:true, 
     // navigation:true  //오른쪽 페이지 버튼
-    normalScrollElements: '#s3',
+    // normalScrollElements: '#s3',
     //오토스크롤이 아니라 정상 스크롤이 적용
 });
 
@@ -187,7 +187,10 @@ var swiper = new Swiper(".swiper1", {
     centeredSlides: true,
     spaceBetween: 30,
     loop: true,
-    mousewheel: true,
+    autoplay: {
+        delay: 5000,
+    },
+    speed : 3000,
     observer: true,
     observeParents: true,
     pagination: {

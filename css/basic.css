@@ -228,23 +228,23 @@ span.center {
 
 .ImgTable {position: relative; width: 850px; margin: 0 auto}
 
-.webtable .pc {width: 700px; margin: 0 auto;}
+.webtable .pc {width: 550px; margin: 0 auto;}
 .webtable .pc img {width: 100%;}
 .webtable .phone {
     width: 200px; 
     position: absolute; 
-    top: 70%; left: 70%;
+    top: 65%; left: 65%;
 }
 .webtable .phone img {width: 100%;}
 .webtable .tablet { 
     width: 330px;  
     position: absolute; 
-    top: 55%; left: 0;
+    top: 46%; left: 0;
 }
 .webtable .tablet img {width: 100%;}
 
-.webtable h3 { margin-top: 3vh;}
-.webtable p { line-height: 35px; margin-bottom: 20px;}
+.siteTxt { margin-top: 3vh; font-size: 19px;}
+.siteTxtt { line-height: 35px; margin-bottom: 20px; font-size: 16px;}
 .webtable span { color: #767676; font-weight: normal;}
 
 .webA { display: flex; gap: 10px; justify-content: center; margin-bottom: 3vh;}
@@ -273,12 +273,12 @@ span.center {
     color: #652EC7;
     display: inline-block;
     overflow: hidden;
-    width: 155px;
+    width: 175px;
     padding: 10px 30px;
     position: relative;
     text-transform: uppercase;
     transition: 0.5s linear;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
 }
 .read-more > a > span {
     background-color: #652EC7;
@@ -305,16 +305,152 @@ span.center {
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    top: 45.5px;
-    width: 591px;
-    height: 333px;
+    top: 36px;
+    width: 465px;
+    height: 260px;
     background: url(../img/miniwebimg.png) 45% top no-repeat;
     background-size:cover;
 }
+
+.gwkfwebafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 36px;
+    width: 465px;
+    height: 260px;
+    background: url(../img/gwkfwebimg.png) 45% top no-repeat;
+    background-size:cover;
+}
+
+.hotelwebafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 36px;
+    width: 465px;
+    height: 260px;
+    background: url(../img/hotelwebimg.png) 45% top no-repeat;
+    background-size:cover;
+}
+
+.bootwebafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 36px;
+    width: 465px;
+    height: 260px;
+    background: url(../img/bootstrapwebimg.png) 45% top no-repeat;
+    background-size:cover;
+}
+
+
+
+
+.minitabletafter::after {
+    content: "";
+    left: calc(50% - 1px);
+    position: absolute;
+    transform: translateX(-50%);
+    top: 24px;
+    width: 302px;
+    height: 225px;
+    background: url(../img/minitablettimg.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 3%;
+}
+
+.hoteltabletafter::after {
+    content: "";
+    left: calc(50% - 1px);
+    position: absolute;
+    transform: translateX(-50%);
+    top: 24px;
+    width: 302px;
+    height: 225px;
+    background: url(../img/hoteltabletimg.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 3%;
+}
+
+
+
+
+
+.minimobileafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 14px;
+    width: 76.5px;
+    height: 156px;
+    background: url(../img/minimimg.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 0 0 7% 7%;
+}
+
+.gwkfmobileafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 14px;
+    width: 76.5px;
+    height: 156px;
+    background: url(../img/gwkfming.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 0 0 7% 7%;
+}
+
+.hotelmobileafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 14px;
+    width: 76.5px;
+    height: 156px;
+    background: url(../img/hotelmimg.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 0 0 7% 7%;
+}
+
+.bootmobileafter::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 14px;
+    width: 76.5px;
+    height: 155px;
+    background: url(../img/bootstrapmimg.png) 45% top no-repeat;
+    background-size:cover;
+    border-radius: 0 0 7% 7%;
+}
+
+
+
+
 .pc:hover::after{
-    transition: 10s;
+    transition: 8s;
     background-position: 0 bottom;
 }
+
+.tablet:hover::after, .phone:hover::after{
+    transition: 5s;
+    background-position: 0 bottom;
+}
+/* 
+.minitabletafter:hover::after, .hotelmobileafter::after {
+    transition: none;
+    background-position: center top;
+} */
+
 /* section3 end */
 
 /* section4 start */

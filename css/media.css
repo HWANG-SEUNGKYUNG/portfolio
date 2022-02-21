@@ -27,9 +27,11 @@
     .profileImg {width: 170px; margin: 25px auto;}
     .profileTxtBox {margin: 0 auto; padding: 0 30px;}
 
-    .webtable h3 { font-size: 16px;}
-    .webtable p { font-size: 14px;}
-    .read-more > a { font-size: 12px;}
+    .siteTxt { font-size: 16px;}
+    .siteTxtt { font-size: 14px;}
+
+    .read-more > a { font-size: 11.5px;}
+
     .webtable { margin-top: 30px;}
 
 
@@ -45,9 +47,12 @@
 
     #s3 .sectionintro { margin-top: 80px;}
     .webtable {margin-top: 5vh;}
+
+    .siteTxtt { font-size: 12px;}
+
     .webtable .pc { width: 450px;}
     .webtable .phone { width: 150px; left: 60%; top:65%}
-    .webtable .tablet { width: 210px; left: 20%;}
+    .webtable .tablet { width: 210px; left: 17%; top:56% }
     .container {
         gap: 5px;
         margin: 0 10px;
@@ -66,11 +71,25 @@
         line-height: 30px;
         font-size: 10px;
     }
-    .miniwebafter::after {
+    
+    .miniwebafter::after, .gwkfwebafter::after, .hotelwebafter::after, .bootwebafter::after {
         width: 380px;
         height: 215px;
         top: 29px;
     }
+
+    .minitabletafter::after, .hoteltabletafter::after {
+        width: 192.5px;
+        height: 143px;
+        top: 14.5px;
+    }
+
+    .minimobileafter::after, .gwkfmobileafter::after, .hotelmobileafter::after,.bootmobileafter::after {
+        width: 57.5px;
+        height: 115.5px;
+        top: 11px;
+    }
+
 
     .designImg { margin: 30px 10px;}
 
@@ -90,6 +109,7 @@
     .contentBox h2 {padding: 45px 5px; margin: 0;}
     .contentBox p {padding: 45px 0px; }
 
+
     .sectionintroP {margin-bottom: 20px;}
 
     .mediaS { display: inline-flex; justify-content: center;}
@@ -101,6 +121,8 @@
 
 @media ( max-width: 375px) {
     .intro h1 { font-size: 28px; margin-top: 20px;}
+
+    
     .contentBox {top: 20%;}
     .sectionintro, #s3 .sectionintro { margin-top: 30px;}
     .webtable { margin-top: 30px;}
@@ -112,10 +134,23 @@
     .webtable .phone { width: 120px; left: 58%; top:65%}
     .webtable .tablet { width: 175px; left: 25%;}
 
-    .miniwebafter::after {
+    .miniwebafter::after, .gwkfwebafter::after, .hotelwebafter::after, .bootwebafter::after {
         width: 304px;
         height: 171px;
         top: 23px;
+    }
+
+    .minitabletafter::after, .hoteltabletafter::after {
+        width: 160px;
+        height: 120px;
+        top: 12px;
+        left: 50%;
+    }
+
+    .minimobileafter::after, .gwkfmobileafter::after, .hotelmobileafter::after, .bootmobileafter::after {
+        width: 45.5px;
+        height: 92px;
+        top: 8.5px;
     }
 
 }
