@@ -187,10 +187,7 @@ var swiper = new Swiper(".swiper1", {
     centeredSlides: true,
     spaceBetween: 30,
     loop: true,
-    autoplay: {
-        delay: 5000,
-    },
-    speed : 3000,
+    speed : 2000,
     observer: true,
     observeParents: true,
     pagination: {
